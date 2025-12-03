@@ -1304,6 +1304,208 @@ nav {
     }
 }
 
+/* ============================================================
+   💡 FIX GLOBAL PARA RESPONSIVE EN TODA LA PÁGINA
+   ============================================================ */
+
+/* Evita que algo sobresalga horizontalmente */
+* {
+    box-sizing: border-box;
+}
+
+/* Las imágenes nunca se salen */
+img, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Secciones muy amplias en móvil */
+@media (max-width: 600px) {
+    section {
+        padding: 2.2rem 6%;
+    }
+}
+
+
+/* ============================================================
+   🟦 FIX DEL HERO (TÍTULO + SUBTÍTULO + BOTONES)
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+    /* Ajuste de altura */
+    header {
+        height: 85vh;
+    }
+
+    /* TÍTULO más pequeño */
+    .hero h1 {
+        font-size: 2.4rem !important;
+        line-height: 1.2;
+    }
+
+    /* SUBTÍTULO centrado y más readable */
+    .hero-subtitle {
+        font-size: 1.1rem !important;
+        max-width: 90%;
+        margin: 0 auto 25px !important;
+        text-align: center !important;
+    }
+
+    /* BOTONES más compactos */
+    .hero-buttons a {
+        padding: 12px 20px !important;
+        font-size: 0.95rem !important;
+        width: auto;
+        max-width: 90%;
+        white-space: normal;
+        text-align: center;
+    }
+
+    /* Desliza para ver más */
+    .scroll-down {
+        bottom: 20px !important;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ============================================================
+   🟥 NAVBAR Responsive
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 10px 6% !important;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nav-link {
+        padding: 14px 20px !important;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .contacto-btn {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        text-align: center;
+    }
+}
+
+
+/* ============================================================
+   🟦 SECCIÓN QUIENES SOMOS / MISIÓN VISIÓN / SERVICIOS / VENTAJAS
+   ============================================================ */
+
+/* No permitir tarjetas demasiado anchas */
+@media (max-width: 768px) {
+
+    .quienes-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quienes-texto {
+        text-align: justify;
+        font-size: 1.15rem;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    /* Ventajas y Servicios */
+    .ventaja-item,
+    .servicio-item {
+        width: 90% !important;
+        max-width: none;
+    }
+}
+
+
+/* ============================================================
+   🟥 SECCIÓN PROYECTOS
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .galeria {
+        grid-template-columns: 1fr !important;
+    }
+
+    .galeria img {
+        height: 180px;
+    }
+
+    .filtro-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+/* ============================================================
+   🟦 CONTACTO y FORMULARIO
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .contacto-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+
+    .contacto-info {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contacto-item {
+        padding: 1.4rem !important;
+    }
+
+    .icono-contacto {
+        font-size: 1.9rem !important;
+    }
+
+    .formulario-contacto {
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario-contacto h3 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* ============================================================
+   🟥 UBICACIÓN
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .ubicacion-card {
+        padding: 1.8rem !important;
+    }
+
+    .mapa-contacto iframe {
+        height: 260px !important;
+    }
+}
 
 
 
